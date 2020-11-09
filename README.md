@@ -153,7 +153,7 @@ This program comes with ABSOLUTELY NO WARRANTY. It is free software and you are 
 \[2\] https://sourceforge.net/projects/bbmap/ Bushnell, B. BBMap (Version 35.43). 2015.
 
 ### Footnotes
-<a name="myfootnote1">1</a>: In the current version of the code, the parent folder information is provided as an argument just for internal usage. The user must navigate to the parent folder and fire up the *dispatcher* script from there so it can run appropriately. This version also expects that the user provides ABSOLUTE paths to both the parent folder and the FASTA file with the list of barcodes. 
+<a name="myfootnote1">1</a>: In the current version of the code, the parent folder information is provided as an argument just for internal usage. The user must navigate to the parent folder and fire up the *dispatcher* script from there so it can run appropriately. For the sake of precision, this version also expects that the user provides ABSOLUTE paths to both the parent folder and the FASTA file with the list of barcodes. Special notations to represent relative positions in the file system, as "." (dot) and ".." (dot dot), are not allowed.
 
 <a name="myfootnote2">2</a>: The 1-3 mismatch rates range was initially implemented for testing and debugging purposes. Since a zero mismatch rate ensures that only perfect matches to each specific barcode are detected and included in abundance calculations, its application is preferable.
 
