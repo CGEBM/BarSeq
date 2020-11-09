@@ -135,7 +135,7 @@ do
 	###############################################################################################################
 	### Just echoing the final command in the development/test scenario while making different tests with the code:
 	###############################################################################################################
-	#echo "sbatch --mem=10G --time=$time:00:00 --wrap=\"perl ~/CGEBM-open/NGS-BarSeq/generalBBDUK4BarSeq.pl $baseDir$slash$i$slash$file2Work $mismatchRate $list_file $sampleName$underscore$sampleNumber$underscore$read$underscore$reportString\""
+	#echo "sbatch --mem=10G --time=$time:00:00 --wrap=\"perl ~/CGEBM/BarSeq/generalBBDUK4BarSeq.pl $baseDir$slash$i$slash$file2Work $mismatchRate $list_file $sampleName$underscore$sampleNumber$underscore$read$underscore$reportString\""
 	sbatch --mem=10G --time=$time:00:00 --wrap="perl ~/CGEBM/BarSeq/generalBBDUK4BarSeq.pl $baseDir$slash$i$slash$file2Work $mismatchRate $list_file $sampleName$underscore$sampleNumber$underscore$read$underscore$reportString"
 	printf " \n"
 	echo "I'm done with this directory... The barcode detection code should have been submitted over the $file2Work file of the folder in question... Hopping back to the upper level folder..."
