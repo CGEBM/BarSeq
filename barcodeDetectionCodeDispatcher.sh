@@ -124,11 +124,11 @@ do
 	#######################################################
 	# Running the command without using a scheduler system:
 	#######################################################
-	#perl ~/CGEBM-open/NGS-BarSeq/generalBBDUK4BarSeq.pl $baseDir$slash$i$slash$files$file2Work $mismatchRate $list_file $sampleName$underscore$sampleNumber$underscore$read$underscore$reportString
+	#perl ~/CGEBM/BarSeq/generalBBDUK4BarSeq.pl $baseDir$slash$i$slash$files$file2Work $mismatchRate $list_file $sampleName$underscore$sampleNumber$underscore$read$underscore$reportString
 	#####################################################################################################
 	# Original submission command for Sun Grid Engine scheduler by the time of the prototype elaboration:
 	#####################################################################################################
-	#qsub -cwd -V -l h_vmem=10G -l h_rt=$time:0:0 -b y perl ~/CGEBM-open/NGS-BarSeq/generalBBDUK4BarSeq.pl $baseDir$slash$i$slash$files$file2Work $mismatchRate $list_file $sampleName$underscore$sampleNumber$underscore$read$underscore$reportString
+	#qsub -cwd -V -l h_vmem=10G -l h_rt=$time:0:0 -b y perl ~/CGEBM/BarSeq/generalBBDUK4BarSeq.pl $baseDir$slash$i$slash$files$file2Work $mismatchRate $list_file $sampleName$underscore$sampleNumber$underscore$read$underscore$reportString
 	###############################################################################
 	# Adaptation of the command to the SLURM scheduler (development/test scenario):
 	###############################################################################
@@ -136,7 +136,7 @@ do
 	### Just echoing the final command in the development/test scenario while making different tests with the code:
 	###############################################################################################################
 	#echo "sbatch --mem=10G --time=$time:00:00 --wrap=\"perl ~/CGEBM-open/NGS-BarSeq/generalBBDUK4BarSeq.pl $baseDir$slash$i$slash$file2Work $mismatchRate $list_file $sampleName$underscore$sampleNumber$underscore$read$underscore$reportString\""
-	sbatch --mem=10G --time=$time:00:00 --wrap="perl ~/CGEBM-Aberdeen/BarSeq/generalBBDUK4BarSeq.pl $baseDir$slash$i$slash$file2Work $mismatchRate $list_file $sampleName$underscore$sampleNumber$underscore$read$underscore$reportString"
+	sbatch --mem=10G --time=$time:00:00 --wrap="perl ~/CGEBM/BarSeq/generalBBDUK4BarSeq.pl $baseDir$slash$i$slash$file2Work $mismatchRate $list_file $sampleName$underscore$sampleNumber$underscore$read$underscore$reportString"
 	printf " \n"
 	echo "I'm done with this directory... The barcode detection code should have been submitted over the $file2Work file of the folder in question... Hopping back to the upper level folder..."
 	printf " \n"
