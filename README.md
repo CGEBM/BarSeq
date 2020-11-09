@@ -49,7 +49,7 @@ Let's suppose a scenario in which we would like to check for the presence of 5 d
 
   **Figure 1** File system snapshot of the example scenario.
 
-Barcodes are very short sequences (usually 20-30 nucleotides in length). As one of the inputs for the solution, we first need to create a *barcodes.fasta* file representing the list of unique short sequences we would like to search across the reads of our study (Figure 2).
+Barcodes are very short sequences (usually 20-30 bases in length). As one of the inputs for the solution, we first need to create a *barcodes.fasta* file representing the list of unique short sequences we would like to search across the reads of our study (Figure 2).
 
 ```
 >bc1
